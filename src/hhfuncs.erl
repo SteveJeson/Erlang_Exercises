@@ -62,6 +62,6 @@ min2([_|T], Min) -> min2(T, Min).
 sum(L) -> sum(L, 0).
 
 sum([H|T], Sum) ->
-  sum(T, Sum+H|T);
+  sum(T, [Sum+H|T]);
 
 
