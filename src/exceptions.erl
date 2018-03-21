@@ -50,3 +50,36 @@ black_knight(Attack) when is_function(Attack, 0) ->
     _:_ -> "Just a flesh wound."
   end.
 talk() -> "blah blah".
+
+whoa() ->
+  try
+      talk(),
+        _Knight = "None shall pass",
+        _Doubles = [N*2 || N <- lists:seq(1,100)],
+        throws(up),
+        _WillReturnThis = tequila
+  of
+      tequila -> "hey this worked!"
+  catch
+      Exception:Reason -> {caught, Exception, Reason}
+  end.
+
+im_impressed() ->
+  try
+    talk(),
+    _Knight = "None shall Pass!",
+    _Doubles = [N*2 || N <- lists:seq(1,100)],
+    throw(up),
+    _WillReturnThis = tequila
+  catch
+    Exception:Reason -> {caught, Exception, Reason}
+  end.
+
+catcher(X,Y) ->
+  case catch X/Y of
+    {'EXIT',{badarith,_}} -> "uh oh";
+    N -> N
+end.
+
+one_or_two(1) -> return;
+one_or_two(2) -> throw(return).
