@@ -1,0 +1,16 @@
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Date:      Tue Mar 20 16:22:26 2018 +0800
+#
+# On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
+# Changes to be committed:
+#	modified:   .idea/workspace.xml
+#	modified:   src/hhfuncs.erl
+#
+# Changes not staged for commit:
+#	modified:   .idea/workspace.xml
+#my
